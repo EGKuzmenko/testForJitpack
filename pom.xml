@@ -48,6 +48,13 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs</artifactId>
+            <version>4.0.0-beta3</version>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -168,6 +175,12 @@
                     <rulesUri>file://${project.basedir}/maven-version-rules.xml</rulesUri>
                 </configuration>
             </plugin>
+	
+	    <plugin>
+	       <groupId>com.github.spotbugs</groupId>
+	       <artifactId>spotbugs-maven-plugin</artifactId>
+	       <version>3.1.12.2</version>
+	    </plugin>
 
         </plugins>
 
